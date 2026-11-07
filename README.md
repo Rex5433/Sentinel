@@ -48,4 +48,4 @@ A locally hosted, homegrown cybersecurity analysis tool designed for log interpr
 - **Purpose:** Cybersecurity research, training, and competition preparation
 - **Status:** Active development
 
-*Sentinel is an experimental security analysis tool. Findings should be independently verified, and use in competitions is subject to organizer approval.*
+*Sentinel is an experimental security analysis tool. Findings should be independently verified.*
