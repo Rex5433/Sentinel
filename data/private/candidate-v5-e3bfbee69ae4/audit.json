@@ -1,0 +1,2482 @@
+{
+  "version": "team-diverse-v5.0",
+  "manifest_sha256": "04384711440d62e3b7c2de27eabb362b119e4f674012814a1c0f4968a80214be",
+  "status": "candidate_pending_review",
+  "events": 2673808,
+  "windows": 36480,
+  "rejected": 0,
+  "unrecognized": 384,
+  "warnings": 384,
+  "excluded": 0,
+  "sources": 384,
+  "missing_intervals": 384,
+  "independent_procedural_groups": 192,
+  "recipe_parameter_families": 24,
+  "seeds": 192,
+  "hosts": 384,
+  "by_split": [
+    {
+      "split": "train",
+      "sources": 256,
+      "groups": 128,
+      "families": 16,
+      "events": 1781553,
+      "windows": 24320
+    },
+    {
+      "split": "validation",
+      "sources": 64,
+      "groups": 32,
+      "families": 4,
+      "events": 445015,
+      "windows": 6080
+    },
+    {
+      "split": "test",
+      "sources": 64,
+      "groups": 32,
+      "families": 4,
+      "events": 447240,
+      "windows": 6080
+    }
+  ],
+  "selected_targets": 12288,
+  "all_supported_windows": 30336,
+  "masked_windows": 6144,
+  "selected_class_counts": [
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 0,
+      "count": 256
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 1,
+      "count": 256
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 2,
+      "count": 256
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 3,
+      "count": 256
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 0,
+      "count": 256
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 1,
+      "count": 256
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 2,
+      "count": 256
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 3,
+      "count": 256
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 0,
+      "count": 1024
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 1,
+      "count": 1024
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 2,
+      "count": 1024
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 3,
+      "count": 1024
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 0,
+      "count": 1024
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 1,
+      "count": 1024
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 2,
+      "count": 1024
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 3,
+      "count": 1024
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 0,
+      "count": 256
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 1,
+      "count": 256
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 2,
+      "count": 256
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 3,
+      "count": 256
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 0,
+      "count": 256
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 1,
+      "count": 256
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 2,
+      "count": 256
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 3,
+      "count": 256
+    }
+  ],
+  "natural_class_counts": [
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 0,
+      "count": 1104
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 1,
+      "count": 400
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 2,
+      "count": 512
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 3,
+      "count": 512
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 0,
+      "count": 1104
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 1,
+      "count": 400
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 2,
+      "count": 512
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 3,
+      "count": 512
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 0,
+      "count": 4416
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 1,
+      "count": 1600
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 2,
+      "count": 2048
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 3,
+      "count": 2048
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 0,
+      "count": 4416
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 1,
+      "count": 1600
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 2,
+      "count": 2048
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 3,
+      "count": 2048
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 0,
+      "count": 1104
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 1,
+      "count": 400
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 2,
+      "count": 512
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 3,
+      "count": 512
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 0,
+      "count": 1104
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 1,
+      "count": 400
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 2,
+      "count": 512
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 3,
+      "count": 512
+    }
+  ],
+  "masked_counts": [
+    {
+      "split": "test",
+      "platform": "linux",
+      "status": "feature_unobservable",
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "status": "insufficient_evidence",
+      "count": 416
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "status": "mixed_activity",
+      "count": 64
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "status": "feature_unobservable",
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "status": "insufficient_evidence",
+      "count": 416
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "status": "mixed_activity",
+      "count": 64
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "status": "feature_unobservable",
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "status": "insufficient_evidence",
+      "count": 1664
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "status": "mixed_activity",
+      "count": 256
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "status": "feature_unobservable",
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "status": "insufficient_evidence",
+      "count": 1664
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "status": "mixed_activity",
+      "count": 256
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "status": "feature_unobservable",
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "status": "insufficient_evidence",
+      "count": 416
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "status": "mixed_activity",
+      "count": 64
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "status": "feature_unobservable",
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "status": "insufficient_evidence",
+      "count": 416
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "status": "mixed_activity",
+      "count": 64
+    }
+  ],
+  "authorization_counts": [
+    {
+      "split": "test",
+      "platform": "linux",
+      "status": "authorized",
+      "target": -100,
+      "count": 320
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "status": "authorized",
+      "target": 0,
+      "count": 600
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "status": "authorized",
+      "target": 1,
+      "count": 232
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "status": "authorized",
+      "target": 2,
+      "count": 256
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "status": "authorized",
+      "target": 3,
+      "count": 224
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "status": "simulated_unapproved",
+      "target": -100,
+      "count": 192
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "status": "simulated_unapproved",
+      "target": 0,
+      "count": 504
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "status": "simulated_unapproved",
+      "target": 1,
+      "count": 168
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "status": "simulated_unapproved",
+      "target": 2,
+      "count": 256
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "status": "simulated_unapproved",
+      "target": 3,
+      "count": 288
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "status": "authorized",
+      "target": -100,
+      "count": 320
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "status": "authorized",
+      "target": 0,
+      "count": 574
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "status": "authorized",
+      "target": 1,
+      "count": 210
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "status": "authorized",
+      "target": 2,
+      "count": 256
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "status": "authorized",
+      "target": 3,
+      "count": 272
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "status": "simulated_unapproved",
+      "target": -100,
+      "count": 192
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "status": "simulated_unapproved",
+      "target": 0,
+      "count": 530
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "status": "simulated_unapproved",
+      "target": 1,
+      "count": 190
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "status": "simulated_unapproved",
+      "target": 2,
+      "count": 256
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "status": "simulated_unapproved",
+      "target": 3,
+      "count": 240
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "status": "authorized",
+      "target": -100,
+      "count": 1280
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "status": "authorized",
+      "target": 0,
+      "count": 2320
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "status": "authorized",
+      "target": 1,
+      "count": 816
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "status": "authorized",
+      "target": 2,
+      "count": 928
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "status": "authorized",
+      "target": 3,
+      "count": 1184
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "status": "simulated_unapproved",
+      "target": -100,
+      "count": 768
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "status": "simulated_unapproved",
+      "target": 0,
+      "count": 2096
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "status": "simulated_unapproved",
+      "target": 1,
+      "count": 784
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "status": "simulated_unapproved",
+      "target": 2,
+      "count": 1120
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "status": "simulated_unapproved",
+      "target": 3,
+      "count": 864
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "status": "authorized",
+      "target": -100,
+      "count": 1280
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "status": "authorized",
+      "target": 0,
+      "count": 2764
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "status": "authorized",
+      "target": 1,
+      "count": 772
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "status": "authorized",
+      "target": 2,
+      "count": 1040
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "status": "authorized",
+      "target": 3,
+      "count": 672
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "status": "simulated_unapproved",
+      "target": -100,
+      "count": 768
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "status": "simulated_unapproved",
+      "target": 0,
+      "count": 1652
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "status": "simulated_unapproved",
+      "target": 1,
+      "count": 828
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "status": "simulated_unapproved",
+      "target": 2,
+      "count": 1008
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "status": "simulated_unapproved",
+      "target": 3,
+      "count": 1376
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "status": "authorized",
+      "target": -100,
+      "count": 320
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "status": "authorized",
+      "target": 0,
+      "count": 580
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "status": "authorized",
+      "target": 1,
+      "count": 188
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "status": "authorized",
+      "target": 2,
+      "count": 272
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "status": "authorized",
+      "target": 3,
+      "count": 272
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "status": "simulated_unapproved",
+      "target": -100,
+      "count": 192
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "status": "simulated_unapproved",
+      "target": 0,
+      "count": 524
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "status": "simulated_unapproved",
+      "target": 1,
+      "count": 212
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "status": "simulated_unapproved",
+      "target": 2,
+      "count": 240
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "status": "simulated_unapproved",
+      "target": 3,
+      "count": 240
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "status": "authorized",
+      "target": -100,
+      "count": 320
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "status": "authorized",
+      "target": 0,
+      "count": 652
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "status": "authorized",
+      "target": 1,
+      "count": 212
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "status": "authorized",
+      "target": 2,
+      "count": 192
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "status": "authorized",
+      "target": 3,
+      "count": 256
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "status": "simulated_unapproved",
+      "target": -100,
+      "count": 192
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "status": "simulated_unapproved",
+      "target": 0,
+      "count": 452
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "status": "simulated_unapproved",
+      "target": 1,
+      "count": 188
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "status": "simulated_unapproved",
+      "target": 2,
+      "count": 320
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "status": "simulated_unapproved",
+      "target": 3,
+      "count": 256
+    }
+  ],
+  "selected_background_loads": [
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 0,
+      "band": 0,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 0,
+      "band": 1,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 0,
+      "band": 2,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 0,
+      "band": 3,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 0,
+      "band": 4,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 0,
+      "band": 5,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 0,
+      "band": 6,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 0,
+      "band": 7,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 1,
+      "band": 0,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 1,
+      "band": 1,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 1,
+      "band": 2,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 1,
+      "band": 3,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 1,
+      "band": 4,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 1,
+      "band": 5,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 1,
+      "band": 6,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 1,
+      "band": 7,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 2,
+      "band": 0,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 2,
+      "band": 1,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 2,
+      "band": 2,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 2,
+      "band": 3,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 2,
+      "band": 4,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 2,
+      "band": 5,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 2,
+      "band": 6,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 2,
+      "band": 7,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 3,
+      "band": 0,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 3,
+      "band": 1,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 3,
+      "band": 2,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 3,
+      "band": 3,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 3,
+      "band": 4,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 3,
+      "band": 5,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 3,
+      "band": 6,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "target": 3,
+      "band": 7,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 0,
+      "band": 0,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 0,
+      "band": 1,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 0,
+      "band": 2,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 0,
+      "band": 3,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 0,
+      "band": 4,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 0,
+      "band": 5,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 0,
+      "band": 6,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 0,
+      "band": 7,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 1,
+      "band": 0,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 1,
+      "band": 1,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 1,
+      "band": 2,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 1,
+      "band": 3,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 1,
+      "band": 4,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 1,
+      "band": 5,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 1,
+      "band": 6,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 1,
+      "band": 7,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 2,
+      "band": 0,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 2,
+      "band": 1,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 2,
+      "band": 2,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 2,
+      "band": 3,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 2,
+      "band": 4,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 2,
+      "band": 5,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 2,
+      "band": 6,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 2,
+      "band": 7,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 3,
+      "band": 0,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 3,
+      "band": 1,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 3,
+      "band": 2,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 3,
+      "band": 3,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 3,
+      "band": 4,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 3,
+      "band": 5,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 3,
+      "band": 6,
+      "count": 32
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "target": 3,
+      "band": 7,
+      "count": 32
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 0,
+      "band": 0,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 0,
+      "band": 1,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 0,
+      "band": 2,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 0,
+      "band": 3,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 0,
+      "band": 4,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 0,
+      "band": 5,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 0,
+      "band": 6,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 0,
+      "band": 7,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 1,
+      "band": 0,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 1,
+      "band": 1,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 1,
+      "band": 2,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 1,
+      "band": 3,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 1,
+      "band": 4,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 1,
+      "band": 5,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 1,
+      "band": 6,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 1,
+      "band": 7,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 2,
+      "band": 0,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 2,
+      "band": 1,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 2,
+      "band": 2,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 2,
+      "band": 3,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 2,
+      "band": 4,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 2,
+      "band": 5,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 2,
+      "band": 6,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 2,
+      "band": 7,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 3,
+      "band": 0,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 3,
+      "band": 1,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 3,
+      "band": 2,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 3,
+      "band": 3,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 3,
+      "band": 4,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 3,
+      "band": 5,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 3,
+      "band": 6,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "target": 3,
+      "band": 7,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 0,
+      "band": 0,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 0,
+      "band": 1,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 0,
+      "band": 2,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 0,
+      "band": 3,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 0,
+      "band": 4,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 0,
+      "band": 5,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 0,
+      "band": 6,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 0,
+      "band": 7,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 1,
+      "band": 0,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 1,
+      "band": 1,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 1,
+      "band": 2,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 1,
+      "band": 3,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 1,
+      "band": 4,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 1,
+      "band": 5,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 1,
+      "band": 6,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 1,
+      "band": 7,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 2,
+      "band": 0,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 2,
+      "band": 1,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 2,
+      "band": 2,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 2,
+      "band": 3,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 2,
+      "band": 4,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 2,
+      "band": 5,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 2,
+      "band": 6,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 2,
+      "band": 7,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 3,
+      "band": 0,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 3,
+      "band": 1,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 3,
+      "band": 2,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 3,
+      "band": 3,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 3,
+      "band": 4,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 3,
+      "band": 5,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 3,
+      "band": 6,
+      "count": 128
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "target": 3,
+      "band": 7,
+      "count": 128
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 0,
+      "band": 0,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 0,
+      "band": 1,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 0,
+      "band": 2,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 0,
+      "band": 3,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 0,
+      "band": 4,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 0,
+      "band": 5,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 0,
+      "band": 6,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 0,
+      "band": 7,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 1,
+      "band": 0,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 1,
+      "band": 1,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 1,
+      "band": 2,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 1,
+      "band": 3,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 1,
+      "band": 4,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 1,
+      "band": 5,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 1,
+      "band": 6,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 1,
+      "band": 7,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 2,
+      "band": 0,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 2,
+      "band": 1,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 2,
+      "band": 2,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 2,
+      "band": 3,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 2,
+      "band": 4,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 2,
+      "band": 5,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 2,
+      "band": 6,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 2,
+      "band": 7,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 3,
+      "band": 0,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 3,
+      "band": 1,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 3,
+      "band": 2,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 3,
+      "band": 3,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 3,
+      "band": 4,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 3,
+      "band": 5,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 3,
+      "band": 6,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "target": 3,
+      "band": 7,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 0,
+      "band": 0,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 0,
+      "band": 1,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 0,
+      "band": 2,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 0,
+      "band": 3,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 0,
+      "band": 4,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 0,
+      "band": 5,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 0,
+      "band": 6,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 0,
+      "band": 7,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 1,
+      "band": 0,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 1,
+      "band": 1,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 1,
+      "band": 2,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 1,
+      "band": 3,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 1,
+      "band": 4,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 1,
+      "band": 5,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 1,
+      "band": 6,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 1,
+      "band": 7,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 2,
+      "band": 0,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 2,
+      "band": 1,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 2,
+      "band": 2,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 2,
+      "band": 3,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 2,
+      "band": 4,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 2,
+      "band": 5,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 2,
+      "band": 6,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 2,
+      "band": 7,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 3,
+      "band": 0,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 3,
+      "band": 1,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 3,
+      "band": 2,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 3,
+      "band": 3,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 3,
+      "band": 4,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 3,
+      "band": 5,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 3,
+      "band": 6,
+      "count": 32
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "target": 3,
+      "band": 7,
+      "count": 32
+    }
+  ],
+  "selected_auth_styles": [
+    {
+      "split": "test",
+      "platform": "linux",
+      "style": "concentrated",
+      "count": 64
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "style": "distributed_pairs",
+      "count": 64
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "style": "distributed_with_quiet",
+      "count": 64
+    },
+    {
+      "split": "test",
+      "platform": "linux",
+      "style": "five_single_failures",
+      "count": 64
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "style": "concentrated",
+      "count": 64
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "style": "distributed_pairs",
+      "count": 64
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "style": "distributed_with_quiet",
+      "count": 64
+    },
+    {
+      "split": "test",
+      "platform": "windows",
+      "style": "five_single_failures",
+      "count": 64
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "style": "concentrated",
+      "count": 256
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "style": "distributed_pairs",
+      "count": 256
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "style": "distributed_with_quiet",
+      "count": 256
+    },
+    {
+      "split": "train",
+      "platform": "linux",
+      "style": "five_single_failures",
+      "count": 256
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "style": "concentrated",
+      "count": 256
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "style": "distributed_pairs",
+      "count": 256
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "style": "distributed_with_quiet",
+      "count": 256
+    },
+    {
+      "split": "train",
+      "platform": "windows",
+      "style": "five_single_failures",
+      "count": 256
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "style": "concentrated",
+      "count": 64
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "style": "distributed_pairs",
+      "count": 64
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "style": "distributed_with_quiet",
+      "count": 64
+    },
+    {
+      "split": "validation",
+      "platform": "linux",
+      "style": "five_single_failures",
+      "count": 64
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "style": "concentrated",
+      "count": 64
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "style": "distributed_pairs",
+      "count": 64
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "style": "distributed_with_quiet",
+      "count": 64
+    },
+    {
+      "split": "validation",
+      "platform": "windows",
+      "style": "five_single_failures",
+      "count": 64
+    }
+  ],
+  "formats": {
+    "windows-json": 96,
+    "linux-text": 96,
+    "windows-csv": 96,
+    "linux-journal-json": 96
+  },
+  "event_types": {
+    "auth_success": 1887001,
+    "session_close": 446164,
+    "privilege_assigned": 78755,
+    "auth_failure": 27600,
+    "account_created": 12681,
+    "service_installed": 2915,
+    "service_state_change": 3120,
+    "unrecognized": 384,
+    "session_open": 139107,
+    "sudo_command": 70029,
+    "service_activity": 6052
+  },
+  "feature_ranges": {
+    "event_count": {
+      "min": 1.0,
+      "max": 857.0
+    },
+    "auth_failure_count": {
+      "min": 0.0,
+      "max": 13.0
+    },
+    "auth_success_count": {
+      "min": 0.0,
+      "max": 664.0
+    },
+    "session_open_count": {
+      "min": 0.0,
+      "max": 114.0
+    },
+    "session_close_count": {
+      "min": 0.0,
+      "max": 183.0
+    },
+    "sudo_command_count": {
+      "min": 0.0,
+      "max": 65.0
+    },
+    "account_created_count": {
+      "min": 0.0,
+      "max": 7.0
+    },
+    "service_installed_count": {
+      "min": 0.0,
+      "max": 7.0
+    },
+    "service_state_change_count": {
+      "min": 0.0,
+      "max": 7.0
+    },
+    "service_activity_count": {
+      "min": 0.0,
+      "max": 7.0
+    },
+    "other_event_count": {
+      "min": 0.0,
+      "max": 74.0
+    },
+    "distinct_actor_count": {
+      "min": 1.0,
+      "max": 16.0
+    },
+    "distinct_source_ip_count": {
+      "min": 0.0,
+      "max": 24.0
+    },
+    "distinct_target_count": {
+      "min": 0.0,
+      "max": 23.0
+    },
+    "span_seconds": {
+      "min": 0.0,
+      "max": 299.998691
+    },
+    "auth_failure_fraction": {
+      "min": 0.0,
+      "max": 0.9285714285714286
+    },
+    "is_windows": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "is_linux": {
+      "min": 0.0,
+      "max": 1.0
+    }
+  },
+  "unique_single_vectors": 36122,
+  "repeated_single_vector_occurrences": 358,
+  "unique_selected_causal_inputs": 12288,
+  "duplicate_selected_context_occurrences": 0,
+  "cross_split_exact_selected_contexts": 0,
+  "conflicting_selected_contexts": 0,
+  "prior_candidate_manifests_checked": 5,
+  "prior_candidate_or_challenge_raw_matches": 0,
+  "timing_free_behavior_unique": 12288,
+  "timing_free_behavior_cross_split_groups": 0,
+  "timing_free_behavior_cross_split_occurrences": 0,
+  "timing_free_behavior_conflict_groups": 0,
+  "duplicate_full_trajectory_occurrences": 0,
+  "near_duplicate_source_pairs": [],
+  "near_duplicate_definition": "Same OS/different group, all 95 observed windows aligned: training-only SD floored at 1; maximum scaled difference <=0.25 and mean <=0.02. Limited metric, not universal independence.",
+  "actual_reviewed_training_targets": 0,
+  "training_started": false,
+  "training_approved": false,
+  "model_inference_performed": false,
+  "test_inspection": "Structural facts/labels/features only, no checkpoint predictions or model selection.",
+  "limitations": [
+    "Synthetic procedural labels; not confirmed real attack/authorization truth.",
+    "Shared primitives and renderer; held-out cadence/identity families are not independent field domains.",
+    "Balanced selected anchors change class prevalence; context and natural counts reported separately.",
+    "Zero exact input matches does not eliminate all near duplicates or generator shortcuts.",
+    "Targets mirror an observable count rubric; cannot prove added value over rules or zero incident misses."
+  ]
+}
