@@ -1,0 +1,8 @@
+2026-11-03T09:00:00-06:00 synthetic-linux sshd[100]: Failed password for invalid user demo-user from 192.0.2.20 port 50000 ssh2
+2026-11-03T15:00:01Z synthetic-linux sshd[101]: Accepted publickey for demo-user from 2001:db8::20 port 50001 ssh2
+2026-11-03T15:00:02Z synthetic-linux sudo[102]: demo-user : TTY=pts/0 ; PWD=/demo ; USER=root ; COMMAND=/usr/bin/id
+2026-11-03T15:00:03Z synthetic-linux login[103]: pam_unix(login:session): session opened for user demo-user(uid=1000) by LOGIN(uid=0)
+2026-11-03T15:00:04Z synthetic-linux systemd[1]: Started Synthetic demonstration service.
+Nov  3 09:00:05 synthetic-linux sshd[104]: Failed password for demo-user from 192.0.2.20 port 50002 ssh2
+this is deliberately malformed synthetic input
+2026-11-03T15:00:07Z synthetic-linux demo[105]: Unrecognized synthetic message retained for review.
