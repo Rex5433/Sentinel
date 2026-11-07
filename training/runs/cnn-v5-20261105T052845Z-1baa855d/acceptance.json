@@ -1,0 +1,7 @@
+{
+  "decision": "owner_opted_in_to_limited_experimental_training",
+  "manifest_sha256": "04384711440d62e3b7c2de27eabb362b119e4f674012814a1c0f4968a80214be",
+  "audit_sha256": "5c0ed2e9ef96e501a04d83f47098d6e519a0b89c1c44544b9c611e0413c086d9",
+  "recorded_utc": "2026-11-05T05:28:45.087159+00:00",
+  "scope": "Procedural selected targets only; original annotations remain pending; no field truth or scored use"
+}
