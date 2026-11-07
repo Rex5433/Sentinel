@@ -43,7 +43,7 @@ A locally hosted, homegrown cybersecurity analysis tool designed for log interpr
 - **Deployment:** Local hosting
 
 ## Project Information
-- **Developer:** Team 84
+- **Developer:** Purdue ROAR Cyber
 - **Project:** Sentinel
 - **Purpose:** Cybersecurity research, training, and competition preparation
 - **Status:** Active development
