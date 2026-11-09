@@ -1,6 +1,6 @@
 # Sentinel
 
-A locally hosted, homegrown cybersecurity analysis tool designed for log interpretation, network monitoring, and incident response. Developed by **Team 84** and inspired by OptimSecurity's Security Dashboard.
+A locally hosted, homegrown cybersecurity analysis tool designed for log interpretation, network monitoring, and incident response. Developed by **ROAR Cyber** and inspired by OptimSecurity's Security Dashboard.
 
 ## Features
 
