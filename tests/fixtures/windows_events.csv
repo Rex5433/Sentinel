@@ -1,4 +1,0 @@
-Id,TimeCreated,MachineName,LogName,ProviderName,Message,TargetUserName,IpAddress
-4625,2026-11-03T09:00:00-06:00,synthetic-windows,Security,Microsoft-Windows-Security-Auditing,"Synthetic example, with a comma",demo-user,192.0.2.20
-4624,2026-11-03T15:00:01Z,synthetic-windows,Security,Microsoft-Windows-Security-Auditing,"Synthetic multiline
-message",demo-user,2001:db8::20
