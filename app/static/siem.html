@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wazuh Tools · Sentinel · Roar Cyber | Team 84</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/wazuh-tools.js" defer></script>
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">S</span><span>Sentinel <small>Roar Cyber | Team 84</small></span></div>
+    <div class="actions"><span id="siem-user" class="small muted"></span><button id="siem-logout" type="button" class="secondary">Sign out</button></div>
+  </header>
+  <nav class="tool-nav" aria-label="Sentinel tools">
+    <a href="/">Logs</a>
+    <a href="/live">Live logs</a>
+    <a href="/?tool=network">Network</a>
+    <a href="/?tool=timeline">Timeline</a>
+    <a href="/?tool=commands">Commands</a>
+    <a href="/mysql">MySQL</a>
+    <a href="/changes">Changes</a>
+    <a href="/siem" aria-current="page">Wazuh Tools</a>
+    <a href="/agents">SIEM Agents</a>
+  </nav>
+  <main>
+    <div class="page-heading"><h1>Wazuh Tools</h1></div>
+    <details class="section-details" id="wazuh-setup">
+      <summary>Quick setup</summary>
+      <p><strong>Host laptop</strong> · SSH <code>127.0.0.1:2222</code> · Dashboard <code>https://127.0.0.1:8443</code></p>
+      <p><strong>Teammate laptop</strong> · SSH <code>HOTSPOT_IP:2222</code> · Dashboard <code>https://HOTSPOT_IP:8443</code></p>
+      <p class="small muted">Join the private hotspot and use the host laptop's hotspot IP. Use a non-root SSH account. For a new address, confirm the fingerprint shown by Sentinel against the VM's host key before approving it. Each laptop saves its own settings.</p>
+    </details>
+    <div id="wazuh-workspace" class="workspace siem-workspace">
+      <section class="panel" aria-labelledby="wazuh-ssh-title">
+        <h2 id="wazuh-ssh-title">Wazuh SSH Connection</h2>
+        <form id="wazuh-ssh" class="filter-grid">
+          <label>SSH hostname or IP<input name="host" value="127.0.0.1" required maxlength="253"></label>
+          <label>SSH port<input name="port" type="number" value="2222" min="1" max="65535" required></label>
+          <label>SSH username<input name="username" autocomplete="username" required maxlength="32"></label>
+          <label>Authentication<select name="authentication"><option value="password">Password</option><option value="key">SSH private key</option></select></label>
+          <label id="wazuh-password-label">SSH password<span class="password-entry"><input name="password" type="password" maxlength="2048" autocomplete="off"><button id="wazuh-password-toggle" type="button" class="secondary password-toggle" aria-label="Show password" aria-pressed="false">👁</button></span></label>
+          <label id="wazuh-key-label" hidden>Private-key path<input name="identity_file" maxlength="1024" placeholder="Absolute path, or blank for the SSH agent"></label>
+          <div class="actions"><button value="save">Save connection</button><button value="test" class="secondary">Test connection</button></div>
+        </form>
+        <dialog id="wazuh-host-key" class="panel" aria-labelledby="wazuh-host-key-title">
+          <form method="dialog">
+            <h3 id="wazuh-host-key-title">Verify SSH host key</h3>
+            <p id="wazuh-host-key-details"></p>
+            <p>Compare this fingerprint with the one shown on the Wazuh VM before trusting this host.</p>
+            <div class="actions"><button value="cancel" class="secondary" autofocus>Cancel</button><button value="approve">Trust and continue</button></div>
+          </form>
+        </dialog>
+        <p id="wazuh-ssh-state" role="status"></p>
+      </section>
+      <section class="panel" aria-labelledby="nmap-title">
+      <h2 id="nmap-title">Nmap Scanner</h2>
+      <p class="small muted">Scans run from the Wazuh VM. Save its SSH connection and add an authorized target.</p>
+      <details class="section-details"><summary>Authorized targets</summary>
+        <form id="nmap-target" class="filter-grid">
+          <label>Display name<input name="name" required maxlength="80"></label>
+          <label>One IP address<input name="address" required maxlength="45"></label>
+          <label class="trust-label"><input name="sensitive" type="checkbox" checked>Sensitive device (PLC, HMI, or unknown)</label>
+          <div class="actions"><button type="submit" class="secondary">Add authorized target</button></div>
+        </form>
+        <div id="nmap-targets"></div>
+      </details>
+      <form id="nmap-scan" class="filter-grid">
+        <label>Target<select name="target" required></select></label>
+        <label>Scan profile<select name="profile"><option value="selected">Selected TCP ports</option><option value="discovery">Basic TCP discovery</option><option value="service">Limited service identification</option></select></label>
+        <label id="nmap-port-label">TCP ports<input name="ports" placeholder="e.g. 22,80,443" maxlength="128"></label>
+        <label class="trust-label"><input name="authorized" type="checkbox" required>I am authorized to scan this target</label>
+        <div class="actions"><button id="nmap-start" type="submit" disabled>Start scan</button><button id="nmap-stop" type="button" class="secondary" disabled>Stop scan</button></div>
+      </form>
+      <p id="nmap-state" role="status"></p>
+      <label for="nmap-history">Scan history<select id="nmap-history"></select></label>
+      <div id="nmap-results"></div>
+      </section>
+    </div>
+      <section class="panel" aria-labelledby="wazuh-dashboard-title">
+        <h2 id="wazuh-dashboard-title">Open Wazuh Dashboard</h2>
+        <form id="wazuh-dashboard">
+          <label>Dashboard HTTPS URL<input name="url" type="url" value="https://127.0.0.1:8443" required maxlength="512"></label>
+          <div class="actions"><button type="submit" class="secondary">Save URL</button><a id="wazuh-dashboard-link" class="secondary" href="https://127.0.0.1:8443" target="_blank" rel="noopener noreferrer">Open Dashboard</a></div>
+        </form>
+        <p class="small muted">Use Wazuh's dashboard for alerts, monitoring, and administration. Teammates need the dashboard port forwarded to the private hotspot.</p>
+        <p id="wazuh-dashboard-state" role="status"></p>
+      </section>
+  </main>
+</body>
+</html>
