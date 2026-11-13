@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-11-11T06:00:00.125-0600",
+  "rule": {
+    "level": 10,
+    "description": "Synthetic failed sign-in sequence",
+    "id": "100001",
+    "groups": ["authentication_failed", "synthetic_lab"]
+  },
+  "agent": {"id": "003", "name": "lab-linux-01", "ip": "192.0.2.33"},
+  "manager": {"name": "synthetic-manager"},
+  "id": "synthetic-wazuh-001",
+  "decoder": {"name": "sshd"},
+  "data": {"srcip": "198.51.100.7", "dstuser": "sample-user"},
+  "full_log": "Synthetic Wazuh fixture. No operational credentials or telemetry."
+}

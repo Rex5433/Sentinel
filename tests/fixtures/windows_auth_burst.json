@@ -1,0 +1,10 @@
+[
+  {"Id":4625,"TimeCreated":"2026-11-03T15:00:00Z","MachineName":"synthetic-burst-host","LogName":"Security","ProviderName":"Microsoft-Windows-Security-Auditing","TargetUserName":"demo-user","IpAddress":"192.0.2.20","Message":"Synthetic failure 1; test source only."},
+  {"Id":4625,"TimeCreated":"2026-11-03T15:00:01Z","MachineName":"synthetic-burst-host","LogName":"Security","ProviderName":"Microsoft-Windows-Security-Auditing","TargetUserName":"demo-user","IpAddress":"192.0.2.20","Message":"Synthetic failure 2; test source only."},
+  {"Id":4625,"TimeCreated":"2026-11-03T15:00:02Z","MachineName":"synthetic-burst-host","LogName":"Security","ProviderName":"Microsoft-Windows-Security-Auditing","TargetUserName":"demo-user","IpAddress":"192.0.2.20","Message":"Synthetic failure 3; test source only."},
+  {"Id":4625,"TimeCreated":"2026-11-03T15:00:03Z","MachineName":"synthetic-burst-host","LogName":"Security","ProviderName":"Microsoft-Windows-Security-Auditing","TargetUserName":"demo-user","IpAddress":"192.0.2.20","Message":"Synthetic failure 4; test source only."},
+  {"Id":4625,"TimeCreated":"2026-11-03T15:00:04Z","MachineName":"synthetic-burst-host","LogName":"Security","ProviderName":"Microsoft-Windows-Security-Auditing","TargetUserName":"demo-user","IpAddress":"192.0.2.20","Message":"Synthetic failure 5; test source only."},
+  {"Id":4624,"TimeCreated":"2026-11-03T15:00:10Z","MachineName":"synthetic-burst-host","LogName":"Security","ProviderName":"Microsoft-Windows-Security-Auditing","TargetUserName":"demo-user","IpAddress":"192.0.2.20","Message":"Synthetic later success; no real incident is represented."},
+  {"Id":4625,"TimeCreated":null,"MachineName":"synthetic-burst-host","LogName":"Security","ProviderName":"Microsoft-Windows-Security-Auditing","Message":"Missing time intentionally prevents window assignment."},
+  {"Id":4697,"TimeCreated":"2026-11-03T15:00:20Z","LogName":"Security","ProviderName":"Microsoft-Windows-Security-Auditing","Message":"Missing host intentionally prevents window assignment."}
+]
