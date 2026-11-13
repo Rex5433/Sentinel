@@ -1,0 +1,95 @@
+2026-07-20T19:04:03.392736-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20001]: Accepted password for user1 from 203.0.113.22 port 52100 ssh2
+2026-07-20T19:06:16.802025-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20002]: pam_unix(sshd:session): session closed for user user0
+2026-07-20T19:11:00.804268-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sudo[20003]: user1 : TTY=pts/9 ; PWD=/srv ; USER=root ; COMMAND=/usr/bin/id
+2026-07-20T19:11:40.609119-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20004]: pam_unix(sshd:session): session closed for user user1
+2026-07-20T19:15:26.991240-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sudo[20005]: user1 : TTY=pts/9 ; PWD=/srv ; USER=root ; COMMAND=/usr/bin/id
+2026-07-20T19:18:04.259471-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20006]: Accepted password for user1 from 203.0.113.20 port 52100 ssh2
+2026-07-20T19:18:16.555496-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20007]: pam_unix(sshd:session): session closed for user user0
+2026-07-20T19:19:37.640684-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20008]: pam_unix(sshd:session): session closed for user user0
+2026-07-20T19:19:43.155881-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20009]: Accepted password for user0 from 203.0.113.21 port 52100 ssh2
+2026-07-20T19:20:36.903958-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20010]: pam_unix(sshd:session): session closed for user user1
+2026-07-20T19:24:49.098355-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20011]: Accepted password for user1 from 203.0.113.21 port 52100 ssh2
+2026-07-20T19:25:59.108043-05:00 adjudication-maintenance_with_quiet_afterward-61540-a systemd[20012]: Started service-4.service
+2026-07-20T19:26:02.708008-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20013]: Accepted password for user0 from 203.0.113.22 port 52100 ssh2
+2026-07-20T19:26:25.823171-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20014]: Accepted password for user1 from 203.0.113.21 port 52100 ssh2
+2026-07-20T19:27:11.406416-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20015]: Accepted password for user1 from 203.0.113.22 port 52100 ssh2
+2026-07-20T19:27:48.801386-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20016]: pam_unix(sshd:session): session closed for user user1
+2026-07-20T19:28:08.993201-05:00 adjudication-maintenance_with_quiet_afterward-61540-a systemd[20017]: Started service-3.service
+2026-07-20T19:29:02.058437-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20018]: pam_unix(sshd:session): session closed for user user0
+2026-07-20T19:29:50.420573-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20019]: Accepted password for user1 from 203.0.113.20 port 52100 ssh2
+2026-07-20T19:29:57.248259-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sudo[20020]: user1 : TTY=pts/9 ; PWD=/srv ; USER=root ; COMMAND=/usr/bin/id
+2026-07-20T19:33:39.978928-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20021]: Accepted password for user1 from 203.0.113.22 port 52100 ssh2
+2026-07-20T19:35:24.934741-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sudo[20022]: user1 : TTY=pts/9 ; PWD=/srv ; USER=root ; COMMAND=/usr/bin/id
+2026-07-20T19:36:02.692602-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20023]: Accepted password for user0 from 203.0.113.22 port 52100 ssh2
+2026-07-20T19:36:21.339124-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20024]: Accepted password for user1 from 203.0.113.20 port 52100 ssh2
+2026-07-20T19:37:27.887055-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20025]: Accepted password for user1 from 203.0.113.21 port 52100 ssh2
+2026-07-20T19:37:30.408490-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20026]: Accepted password for user1 from 203.0.113.21 port 52100 ssh2
+2026-07-20T19:38:12.843211-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20027]: pam_unix(sshd:session): session closed for user user0
+2026-07-20T19:38:25.778605-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sudo[20028]: user0 : TTY=pts/9 ; PWD=/srv ; USER=root ; COMMAND=/usr/bin/id
+2026-07-20T19:38:55.349909-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20029]: Accepted password for user1 from 203.0.113.20 port 52100 ssh2
+2026-07-20T19:39:13.045954-05:00 adjudication-maintenance_with_quiet_afterward-61540-a useradd[20030]: new user: name=added-90, UID=12030, GID=12000
+2026-07-20T19:39:34.139491-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20031]: pam_unix(sshd:session): session closed for user user0
+2026-07-20T19:43:07.742632-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20032]: Accepted password for user1 from 203.0.113.22 port 52100 ssh2
+2026-07-20T19:45:11.725363-05:00 adjudication-maintenance_with_quiet_afterward-61540-a systemd[20033]: Started service-1.service
+2026-07-20T19:46:03.552058-05:00 adjudication-maintenance_with_quiet_afterward-61540-a systemd[20034]: Started service-4.service
+2026-07-20T19:46:50.360942-05:00 adjudication-maintenance_with_quiet_afterward-61540-a systemd[20035]: Started service-3.service
+2026-07-20T19:48:34.552959-05:00 adjudication-maintenance_with_quiet_afterward-61540-a systemd[20036]: Started service-2.service
+2026-07-20T19:49:01.274406-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20037]: Accepted password for user1 from 203.0.113.20 port 52100 ssh2
+2026-07-20T19:53:57.422355-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20038]: pam_unix(sshd:session): session closed for user user0
+2026-07-20T19:55:18.173409-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20039]: Accepted password for user0 from 203.0.113.20 port 52100 ssh2
+2026-07-20T20:03:30.473185-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sudo[20040]: user1 : TTY=pts/9 ; PWD=/srv ; USER=root ; COMMAND=/usr/bin/id
+2026-07-20T20:07:50.081519-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20041]: Accepted password for user0 from 203.0.113.22 port 52100 ssh2
+2026-07-20T20:08:25.116042-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20042]: pam_unix(sshd:session): session closed for user user0
+2026-07-20T20:08:56.514056-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20043]: Accepted password for user0 from 203.0.113.21 port 52100 ssh2
+2026-07-20T20:09:49.912114-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20044]: Accepted password for user1 from 203.0.113.21 port 52100 ssh2
+2026-07-20T20:11:24.597945-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20045]: pam_unix(sshd:session): session closed for user user0
+2026-07-20T20:13:11.468244-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sudo[20046]: user0 : TTY=pts/9 ; PWD=/srv ; USER=root ; COMMAND=/usr/bin/id
+2026-07-20T20:13:34.754157-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20047]: Accepted password for user1 from 203.0.113.21 port 52100 ssh2
+2026-07-20T20:14:11.737202-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20048]: Accepted password for user0 from 203.0.113.20 port 52100 ssh2
+2026-07-20T20:14:11.987323-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20049]: Accepted password for user1 from 203.0.113.22 port 52100 ssh2
+2026-07-20T20:15:20.744347-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20050]: pam_unix(sshd:session): session closed for user user1
+2026-07-20T20:15:48.244490-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20051]: Accepted password for user0 from 203.0.113.20 port 52100 ssh2
+2026-07-20T20:16:02.121257-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20052]: Accepted password for user0 from 203.0.113.21 port 52100 ssh2
+2026-07-20T20:17:47.161402-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20053]: Accepted password for user0 from 203.0.113.22 port 52100 ssh2
+2026-07-20T20:18:27.069148-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sudo[20054]: user0 : TTY=pts/9 ; PWD=/srv ; USER=root ; COMMAND=/usr/bin/id
+2026-07-20T20:19:50.331390-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sudo[20055]: user0 : TTY=pts/9 ; PWD=/srv ; USER=root ; COMMAND=/usr/bin/id
+2026-07-20T20:20:05.025788-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20056]: Accepted password for user0 from 203.0.113.20 port 52100 ssh2
+2026-07-20T20:20:43.000415-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20057]: Accepted password for user0 from 203.0.113.22 port 52100 ssh2
+2026-07-20T20:21:27.700599-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20058]: pam_unix(sshd:session): session closed for user user0
+2026-07-20T20:21:57.638349-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sudo[20059]: user1 : TTY=pts/9 ; PWD=/srv ; USER=root ; COMMAND=/usr/bin/id
+2026-07-20T20:22:04.783568-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20060]: Accepted password for user1 from 203.0.113.22 port 52100 ssh2
+2026-07-20T20:22:12.234353-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20061]: Accepted password for user1 from 203.0.113.21 port 52100 ssh2
+2026-07-20T20:22:46.759194-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20062]: Accepted password for user1 from 203.0.113.20 port 52100 ssh2
+2026-07-20T20:25:07.517182-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sudo[20063]: user1 : TTY=pts/9 ; PWD=/srv ; USER=root ; COMMAND=/usr/bin/id
+2026-07-20T20:26:02.035742-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20064]: Accepted password for user1 from 203.0.113.21 port 52100 ssh2
+2026-07-20T20:33:31.759534-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20065]: pam_unix(sshd:session): session closed for user user0
+2026-07-20T20:36:19.221552-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20066]: Accepted password for user0 from 203.0.113.21 port 52100 ssh2
+2026-07-20T20:36:55.996482-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20067]: pam_unix(sshd:session): session closed for user user0
+2026-07-20T20:42:43.169300-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20068]: Accepted password for user0 from 203.0.113.22 port 52100 ssh2
+2026-07-20T20:43:48.050443-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20069]: Accepted password for user0 from 203.0.113.20 port 52100 ssh2
+2026-07-20T20:46:02.136270-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20070]: pam_unix(sshd:session): session closed for user user0
+2026-07-20T20:47:26.343266-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20071]: pam_unix(sshd:session): session closed for user user0
+2026-07-20T20:51:28.023370-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20072]: pam_unix(sshd:session): session closed for user user0
+2026-07-20T20:51:46.639092-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20073]: Accepted password for user1 from 203.0.113.21 port 52100 ssh2
+2026-07-20T20:56:09.581237-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20074]: Accepted password for user1 from 203.0.113.22 port 52100 ssh2
+2026-07-20T20:57:56.344330-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20075]: pam_unix(sshd:session): session closed for user user1
+2026-07-20T20:58:17.842120-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20076]: pam_unix(sshd:session): session closed for user user1
+2026-07-20T21:00:46.103099-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20077]: Accepted password for user0 from 203.0.113.22 port 52100 ssh2
+2026-07-20T21:02:27.608669-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sudo[20078]: user1 : TTY=pts/9 ; PWD=/srv ; USER=root ; COMMAND=/usr/bin/id
+2026-07-20T21:02:30.333782-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20079]: pam_unix(sshd:session): session closed for user user1
+2026-07-20T21:02:51.709236-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20080]: Accepted password for user1 from 203.0.113.20 port 52100 ssh2
+2026-07-20T21:08:06.388040-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20081]: Accepted password for user1 from 203.0.113.22 port 52100 ssh2
+2026-07-20T21:09:36.502461-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20082]: Accepted password for user1 from 203.0.113.21 port 52100 ssh2
+2026-07-20T21:10:06.182351-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20083]: Accepted password for user0 from 203.0.113.20 port 52100 ssh2
+2026-07-20T21:10:49.353442-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20084]: Accepted password for user1 from 203.0.113.21 port 52100 ssh2
+2026-07-20T21:11:48.320954-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20085]: pam_unix(sshd:session): session closed for user user1
+2026-07-20T21:12:14.778432-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20086]: pam_unix(sshd:session): session closed for user user0
+2026-07-20T21:12:52.794081-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20087]: pam_unix(sshd:session): session closed for user user0
+2026-07-20T21:14:56.112260-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20088]: Accepted password for user0 from 203.0.113.21 port 52100 ssh2
+2026-07-20T21:15:16.429547-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20089]: Accepted password for user0 from 203.0.113.20 port 52100 ssh2
+2026-07-20T21:15:39.396614-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sudo[20090]: user0 : TTY=pts/9 ; PWD=/srv ; USER=root ; COMMAND=/usr/bin/id
+2026-07-20T21:15:42.204091-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20091]: Accepted password for user1 from 203.0.113.21 port 52100 ssh2
+2026-07-20T21:17:47.967599-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20092]: Accepted password for user1 from 203.0.113.21 port 52100 ssh2
+2026-07-20T21:18:09.393677-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd[20093]: pam_unix(sshd:session): session closed for user user0
+2026-07-20T21:18:45.278589-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sshd-session[20094]: Accepted password for user0 from 203.0.113.21 port 52100 ssh2
+2026-07-20T21:19:55.741699-05:00 adjudication-maintenance_with_quiet_afterward-61540-a sudo[20095]: user0 : TTY=pts/9 ; PWD=/srv ; USER=root ; COMMAND=/usr/bin/id
