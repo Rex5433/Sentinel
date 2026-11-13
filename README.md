@@ -9,6 +9,14 @@ A locally hosted, homegrown cybersecurity analysis tool designed for log interpr
 - Identify suspicious activity and authentication failures.
 - Review flagged events and detection summaries.
 - Inspect original event records.
+- Paste Windows or Linux log text and save it under a custom name.
+- Search saved logs, download the original, edit a copy, or delete a saved entry.
+- Label events involving Blue Team and environment user accounts while keeping security flags visible.
+
+### Live Logs
+- Watch Windows event logs and Linux journal entries over SSH using a password or private key.
+- Review flagged events as new records arrive and keep watches running while using other tabs.
+- Save a capture to Logs or automatically archive new records.
 
 ### Network
 - Analyze network traffic and packet captures.
@@ -25,10 +33,26 @@ A locally hosted, homegrown cybersecurity analysis tool designed for log interpr
 - Access commands for security investigations and troubleshooting.
 - Support manual, authorized incident-response workflows.
 
+### MySQL
+- Build and copy terminal commands for MySQL 8.0 and 8.4.
+- Inspect databases, tables, and grants, or preview rows with filters.
+- Generate a schema-only export or a guarded one-row update for manual review and execution.
+
 ### Changes
 - Review account and privilege changes.
 - Identify service and process modifications.
 - Investigate security-relevant system changes.
+- Compare Windows or Linux inventory snapshots and generate recovery commands for manual use.
+
+### Wazuh Tools
+- Connect to the Wazuh VM over SSH using a password or private key. Verify new host keys once and reconnect with saved settings.
+- Run Nmap on the Wazuh VM against authorized targets. Review scan results, compare scan history, and see port changes in Timeline.
+- Open the native Wazuh Dashboard in a separate tab and save connection settings per laptop for localhost or private hotspot access.
+
+### SIEM Agents
+- Collect logs from multiple Windows and Linux hosts over read-only SSH and review findings by severity.
+- Check host connection and collector status, then pause the view while collection continues.
+- Import or export host profiles and save live captures to the Logs library.
 
 ## Machine Learning
 - Custom CNN-based security event classifier.
