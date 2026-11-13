@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools==84.2.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "team84-sentinel"
+version = "0.1.0"
+description = "Team 84 Sentinel local incident triage foundation"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi==0.162.0",
+    "pydantic==2.14.2",
+    "uvicorn==0.54.0",
+    "paramiko==5.1.0",
+    "wsproto==1.3.2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.2.0", "httpx==0.28.1"]
+
+[tool.setuptools.packages.find]
+include = ["app*", "sentinel*", "training*"]
+
+[tool.setuptools.package-data]
+app = ["static/*.html", "static/*.css", "static/*.js", "static/*.mjs"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
