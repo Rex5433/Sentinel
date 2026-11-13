@@ -2,6 +2,14 @@
 
 A locally hosted, homegrown cybersecurity analysis tool designed for log interpretation, network monitoring, and incident response. Developed by **ROAR Cyber** and inspired by OptimSecurity's Security Dashboard.
 
+## Setup
+- Download the repository using **Code → Download ZIP**, then extract it to a writable folder.
+- Install Python 3.11 or newer. On Windows, add Python to PATH and include Tcl/Tk for the desktop launcher.
+- **Windows:** Double-click `Start Sentinel.vbs` to open the desktop launcher, or run `Start Sentinel.bat` for the console launcher.
+- **macOS:** Open Terminal in the extracted folder and run `bash "Start Sentinel.command"`.
+- **First launch:** Stay online while Sentinel installs its Python dependencies. Create a local owner account when prompted, then sign in when the dashboard opens. If the browser stays closed, open the local URL shown by the launcher.
+- **Later launches:** Use the same launcher. The local dashboard can start offline after setup. Keep the launcher open while using Sentinel.
+
 ## Features
 
 ### Logs
