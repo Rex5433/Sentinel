@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SIEM Agents · Sentinel · Roar Cyber | Team 84</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/password-toggle.js" defer></script>
+  <script src="/static/log-view.js" defer></script>
+  <script src="/static/agent-view.js" defer></script>
+  <script src="/static/agents.js" defer></script>
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">S</span><span>Sentinel <small>Roar Cyber | Team 84</small></span></div>
+    <div class="actions"><span id="agents-user" class="small muted"></span><button id="agents-logout" type="button" class="secondary">Sign out</button></div>
+  </header>
+  <nav class="tool-nav" aria-label="Sentinel tools">
+    <a href="/">Logs</a>
+    <a href="/live">Live logs</a>
+    <a href="/?tool=network">Network</a>
+    <a href="/?tool=timeline">Timeline</a>
+    <a href="/?tool=commands">Commands</a>
+    <a href="/mysql">MySQL</a>
+    <a href="/changes">Changes</a>
+    <a href="/siem">Wazuh Tools</a>
+    <a href="/agents" aria-current="page">SIEM Agents</a>
+  </nav>
+  <main>
+    <div class="page-heading agents-page-heading">
+      <div><h1>SIEM Agents</h1><p>Manage read-only SSH collection from authorized hosts.</p></div>
+      <div class="actions"><button id="agents-add" type="button" disabled>Add host</button><button id="agents-refresh" type="button" class="secondary">Refresh</button></div>
+    </div>
+    <div id="agents-counts" class="counts" aria-label="Host status counts"></div>
+    <p id="agents-status" class="small" role="status" hidden></p>
+    <div class="workspace agents-workspace">
+      <aside class="panel">
+        <h2>Hosts</h2>
+        <label for="agents-search">Search hosts</label>
+        <input id="agents-search" type="search" placeholder="Name, address or role" maxlength="120">
+        <label for="agents-filter">Show hosts</label>
+        <select id="agents-filter">
+          <option value="all">All hosts</option>
+          <option value="connected">Connected</option>
+          <option value="attention">Needs attention</option>
+          <option value="disabled">Disconnected</option>
+        </select>
+        <div id="agents-list" class="agents-list"><p class="muted">Loading hosts…</p></div>
+      </aside>
+      <section class="panel preview" aria-labelledby="agent-detail-title">
+        <h2 id="agent-detail-title" class="filename">Host details</h2>
+        <p id="agent-detail-empty" class="muted">Select a host to view collection status.</p>
+        <div id="agent-detail" hidden>
+          <p id="agent-detail-state"></p>
+          <p id="agent-detail-error" class="notice" hidden></p>
+          <p id="agent-coverage-notice" class="small muted" hidden></p>
+          <div class="actions agent-actions">
+            <button id="agent-connect" type="button">Connect</button>
+            <button id="agent-disconnect" type="button" class="secondary">Disconnect</button>
+            <button id="agent-reconnect" type="button" class="secondary">Reconnect</button>
+            <button id="agent-collect" type="button" class="secondary">Collect now</button>
+            <button id="agent-test-saved" type="button" class="secondary">Test connection</button>
+            <button id="agent-edit" type="button" class="secondary">Edit host</button>
+            <a id="agent-download-profile" class="secondary small" href="#" download>Download profile</a>
+            <button id="agent-remove" type="button" class="danger">Remove host</button>
+          </div>
+          <section class="agent-section" aria-labelledby="agent-findings-title">
+            <div class="section-heading actions agent-review-controls">
+              <h3 id="agent-findings-title">Recent findings</h3>
+              <label for="agent-findings-filter">Severity<select id="agent-findings-filter">
+                <option value="all">All findings</option>
+                <option value="critical">Critical review only</option>
+              </select></label>
+              <button id="agent-pause-updates" type="button" class="secondary" aria-describedby="agent-review-state">Pause updates</button>
+            </div>
+            <p id="agent-review-state" class="small muted" role="status"></p>
+            <div id="agent-findings"></div>
+            <button id="agent-findings-more" type="button" class="secondary" hidden>Show all findings</button>
+          </section>
+          <div class="live-tool-links">
+            <a id="agent-open-timeline" href="/?tool=timeline">Host timeline</a>
+            <a id="agent-open-live" href="/live">Open in Live logs</a>
+          </div>
+          <details class="section-details">
+            <summary>Host details and connection history</summary>
+            <dl id="agent-detail-metrics" class="agent-metrics"></dl>
+            <div id="agent-history"></div>
+          </details>
+          <details id="agent-collector-section" class="section-details">
+            <summary id="agent-collectors-summary">Collectors</summary>
+            <div id="agent-collectors"></div>
+          </details>
+          <div class="section-heading agent-section">
+            <h3>Recent events</h3>
+            <div class="actions"><button id="agent-save-logs" type="button" class="secondary">Save to Logs</button>
+              <button id="agent-save-live" type="button" class="secondary">Save Live Log</button></div>
+          </div>
+          <p id="agent-capture-status" class="small" role="status" hidden></p>
+          <label for="agent-event-filter">Show<select id="agent-event-filter"><option value="all">All recent events</option><option value="flagged">Flagged for review</option></select></label>
+          <div id="agent-events"></div>
+          <button id="agent-events-more" type="button" class="secondary" hidden>Show all recent events</button>
+          <details class="section-details">
+            <summary>Local evidence retention</summary>
+            <button id="agent-purge" type="button" class="danger">Clear Sentinel's local evidence</button>
+            <p class="small muted">Disconnect the host first. This clears only Sentinel's retained copy. Host logs and saved Logs snapshots stay in place.</p>
+          </details>
+        </div>
+      </section>
+    </div>
+  </main>
+  <dialog id="agent-editor" class="log-editor" aria-labelledby="agent-editor-title">
+    <h2 id="agent-editor-title">Add SSH host</h2>
+    <p class="small muted">Verify and accept this host’s fingerprint in your SSH terminal first. Sentinel uses that trusted host key.</p>
+    <form id="agent-form" autocomplete="off" method="post">
+      <fieldset class="agent-fieldset" id="agent-fields">
+        <label id="agent-profile-row" for="agent-profile-file">Import host profile <input id="agent-profile-file" type="file" accept=".json,application/json"></label>
+        <div class="filter-grid agent-inputs">
+          <label for="agent-name">Display name<input id="agent-name" required maxlength="80" autofocus></label>
+          <label for="agent-role">Role or description <span class="muted">Optional</span><input id="agent-role" maxlength="160"></label>
+          <label for="agent-host">Host name or IPv4 address<input id="agent-host" required maxlength="253" spellcheck="false"></label>
+          <label for="agent-port">SSH port<input id="agent-port" type="number" min="1" max="65535" value="22" required></label>
+          <label for="agent-username">SSH username<input id="agent-username" required maxlength="120" spellcheck="false"></label>
+          <label for="agent-authentication">Authentication<select id="agent-authentication"><option value="auto">Automatic (SSH key, then password)</option><option value="key">SSH key</option><option value="password">Password</option></select></label>
+          <label id="agent-identity-row" for="agent-identity-file">Local private key path <span class="muted">Leave blank to use available local SSH agent keys.</span><input id="agent-identity-file" maxlength="1024" spellcheck="false"></label>
+          <label id="agent-password-row" for="agent-password" hidden>SSH password <span class="muted">Used for this Sentinel session.</span><input id="agent-password" type="password" maxlength="1024" autocomplete="off"></label>
+          <label for="agent-platform">Operating system<select id="agent-platform"><option value="auto">Auto detect</option><option value="windows">Windows</option><option value="linux">Linux</option></select></label>
+          <label for="agent-interval">Collection interval (seconds)<input id="agent-interval" type="number" min="15" max="3600" value="60" required></label>
+        </div>
+        <fieldset class="agent-fieldset agent-section">
+          <legend>Monitoring modules</legend>
+          <div id="agent-modules" class="agent-modules"></div>
+        </fieldset>
+        <label id="agent-integrity-row" for="agent-integrity-paths" hidden>File integrity paths <span class="muted">Enter one authorized absolute file path per line.</span><textarea id="agent-integrity-paths" maxlength="4096"></textarea></label>
+        <label for="agent-enabled" class="trust-label"><input type="checkbox" id="agent-enabled">Enable scheduled collection after saving</label>
+      </fieldset>
+      <p id="agent-test-status" class="small" role="status"></p>
+      <div id="agent-test-details" hidden></div>
+      <div class="actions">
+        <button id="agent-test" type="button" class="secondary">Test connection</button>
+        <button id="agent-save" type="submit" disabled>Save host</button>
+        <button id="agent-cancel" type="button" class="secondary">Cancel</button>
+      </div>
+    </form>
+  </dialog>
+  <dialog id="agent-password-dialog" class="log-editor" aria-labelledby="agent-password-title">
+    <h2 id="agent-password-title">SSH password</h2>
+    <form id="agent-password-form" autocomplete="off" method="post">
+      <label for="agent-connect-password">Account password<input id="agent-connect-password" type="password" maxlength="1024" required autocomplete="off" autofocus></label>
+      <div class="actions"><button type="submit" id="agent-password-submit">Continue</button><button type="button" class="secondary" id="agent-password-cancel">Cancel</button></div>
+    </form>
+  </dialog>
+</body>
+</html>

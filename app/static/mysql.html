@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MySQL · Sentinel · Roar Cyber | Team 84</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script type="module" src="/static/mysql.mjs"></script>
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">S</span><span>Sentinel <small>Roar Cyber | Team 84</small></span></div>
+    <div class="actions"><span id="mysql-user" class="small muted"></span><button id="mysql-logout" class="secondary" type="button">Sign out</button></div>
+  </header>
+  <nav class="tool-nav" aria-label="Sentinel tools">
+    <a href="/">Logs</a>
+    <a href="/live">Live logs</a>
+    <a href="/?tool=network">Network</a>
+    <a href="/?tool=timeline">Timeline</a>
+    <a href="/?tool=commands">Commands</a>
+    <a href="/mysql" aria-current="page">MySQL</a>
+    <a href="/changes">Changes</a>
+    <a href="/siem">Wazuh Tools</a>
+    <a href="/agents">SIEM Agents</a>
+  </nav>
+  <main>
+    <div class="page-heading"><div><p class="eyebrow">Roar Cyber | Team 84</p><h1>MySQL terminal assistant</h1></div></div>
+    <p class="notice">Build and copy commands for your authorized terminal. Each result tells you whether it belongs at the <code>mysql&gt;</code> prompt or in PowerShell, Command Prompt, or Bash. Enter passwords only at the terminal prompt.</p>
+    <div class="workspace">
+      <section class="panel">
+        <h2>Build a command</h2>
+        <form id="mysql-form" autocomplete="off">
+          <label for="mysql-version">Server version</label>
+          <select id="mysql-version">
+            <option value="">Unknown or unsupported</option>
+            <option value="8.0">MySQL 8.0</option>
+            <option value="8.4">MySQL 8.4</option>
+          </select>
+          <p class="small muted">If the version is unknown, build Open the MySQL terminal and Check server identity and version first. Select the matching version and rerun the identity check to see the server UUID.</p>
+          <label for="mysql-task">Task</label>
+          <select id="mysql-task" required></select>
+          <div id="mysql-fields"></div>
+          <div class="command-actions"><button id="mysql-build" type="submit">Build command</button></div>
+        </form>
+        <p id="mysql-status" class="small" role="status" aria-live="polite"></p>
+      </section>
+      <section class="panel" aria-labelledby="mysql-output-title">
+        <h2 id="mysql-output-title">Review and copy</h2>
+        <div id="mysql-output"><p class="muted">Choose a task to generate statements.</p></div>
+      </section>
+    </div>
+    <footer>Local templates · Manual terminal use</footer>
+  </main>
+</body>
+</html>
