@@ -1,0 +1,86 @@
+{
+  "schema_version": "system-snapshot-v1",
+  "host": {
+    "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "name": "synthetic-lab-host",
+    "platform": "linux"
+  },
+  "started_at_utc": "2026-11-03T15:00:00Z",
+  "ended_at_utc": "2026-11-03T15:00:05Z",
+  "collector": "synthetic-fixture-v1",
+  "sections": {
+    "services": {
+      "complete": true,
+      "scope": "synthetic-services-v1",
+      "items": [
+        {
+          "id": "ssh.service",
+          "values": {
+            "state": "active",
+            "start_mode": "enabled",
+            "exec_start": "/usr/sbin/sshd -D",
+            "account": "root",
+            "fragment_path": "/lib/systemd/system/ssh.service"
+          }
+        },
+        {
+          "id": "legacy.service",
+          "values": {
+            "state": "inactive"
+          }
+        }
+      ]
+    },
+    "files": {
+      "complete": true,
+      "scope": "synthetic-selected-config-v1",
+      "items": [
+        {
+          "id": "/etc/sentinel-demo.conf",
+          "values": {
+            "exists": true,
+            "kind": "regular",
+            "sha256": "af3139b751feb2ad3f4a71e105fb45916790d42a48fa19b409c18a79722c4335",
+            "byte_count": 26,
+            "text": "Port=443\nListen=127.0.0.1\n",
+            "mode": "0o640",
+            "uid": 0,
+            "gid": 0
+          }
+        }
+      ]
+    },
+    "packages": {
+      "complete": true,
+      "scope": "synthetic-packages-v1",
+      "items": [
+        {
+          "id": "demo-server",
+          "values": {
+            "version": "1.0"
+          }
+        }
+      ]
+    },
+    "users": {
+      "complete": true,
+      "scope": "synthetic-users-v1",
+      "items": [
+        {
+          "id": "demo-user",
+          "values": {
+            "enabled": true
+          }
+        }
+      ]
+    },
+    "firewall": {
+      "complete": false,
+      "scope": "not-collected",
+      "notes": [
+        "Synthetic example intentionally has no firewall inventory."
+      ],
+      "items": []
+    }
+  }
+}

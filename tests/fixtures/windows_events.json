@@ -1,0 +1,46 @@
+[
+  {
+    "Id": 4625,
+    "TimeCreated": "2026-11-03T09:00:00-06:00",
+    "MachineName": "synthetic-windows",
+    "LogName": "Security",
+    "ProviderName": "Microsoft-Windows-Security-Auditing",
+    "RecordId": 101,
+    "Message": "  Synthetic unsuccessful login example.  ",
+    "EventData": {"TargetUserName": "demo-user", "SubjectUserName": "demo-system", "IpAddress": "192.0.2.20"}
+  },
+  {
+    "Id": 4624,
+    "TimeCreated": "2026-11-03T15:00:01Z",
+    "MachineName": "synthetic-windows",
+    "LogName": "Security",
+    "ProviderName": "Microsoft-Windows-Security-Auditing",
+    "Message": "Synthetic successful login example.",
+    "EventData": {"TargetUserName": "demo-user", "IpAddress": "2001:db8::20"}
+  },
+  {
+    "Id": 4720,
+    "TimeCreated": "2026-11-03T15:00:02Z",
+    "MachineName": "synthetic-windows",
+    "LogName": "Security",
+    "ProviderName": "Microsoft-Windows-Security-Auditing",
+    "Message": "Synthetic account creation example.",
+    "EventData": {"SubjectUserName": "demo-admin", "TargetUserName": "demo-new-user"}
+  },
+  {
+    "Id": 4697,
+    "TimeCreated": "2026-11-03T15:00:03Z",
+    "LogName": "Security",
+    "ProviderName": "Microsoft-Windows-Security-Auditing",
+    "Message": "Synthetic service installation example.",
+    "EventData": {"SubjectUserName": "demo-admin", "ServiceName": "demo-service"}
+  },
+  {
+    "Id": 7036,
+    "TimeCreated": "2026-11-03T15:00:04Z",
+    "LogName": "System",
+    "ProviderName": "Service Control Manager",
+    "Message": "Synthetic service state example.",
+    "EventData": {"param1": "demo-service", "param2": "running"}
+  }
+]
