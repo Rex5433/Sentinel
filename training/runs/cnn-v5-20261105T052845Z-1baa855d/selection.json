@@ -1,0 +1,16 @@
+{
+  "best_epoch": 199,
+  "epochs_run": 200,
+  "validation_loss": 0.0004671729766414501,
+  "files": {
+    "config.json": "3e7fbe9d9726bee6beea8f08cd40532c1f02ceef8e7be3f171b31bfa2fcd1581",
+    "acceptance.json": "3789617a6710d3fb55af317794bc4d41071e1a956b272355229bf66f6d2f93f2",
+    "history.jsonl": "92f762f248769a6a5f8861f64cb128f1ffdb064b5c9f7415da37dc5520b0c59c",
+    "initial.pt": "a31a9ed3284ad68082cb9627cb08af0311edb78106e9a9763b9617b34e0657bb",
+    "best.pt": "7ce72c9852d3e4d25e5dd57737ebe7d45912ea3fd454317e16652834ad1ba465",
+    "last.pt": "d0be94f5d0ecc08ce08cc521c839e05a631fcb9520d0cbe90bd6e6ea79302a85",
+    "train_metrics.json": "fce6b809fef980f7abf3ee0c0a071bb102e4ff30309a4edb15dc1de39426b315",
+    "validation_metrics.json": "6d467be1edfbf461823f824b621eb8a72965c04d6e50fb5d0adbba5557b41f3b"
+  },
+  "final_test_performed": false
+}
