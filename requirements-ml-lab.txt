@@ -1,2 +1,0 @@
-# Optional, original Team 84 synthetic CNN rehearsal only. No downloaded weights.
-torch==2.9.1

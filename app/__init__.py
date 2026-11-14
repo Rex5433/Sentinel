@@ -1,1 +1,0 @@
-"""Sentinel local web application."""
